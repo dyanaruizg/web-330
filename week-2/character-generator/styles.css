@@ -1,0 +1,96 @@
+/*
+  Pragmatic JavaScript
+  Chapter 1
+  Programming Assignment
+
+  Author: Diana Ruiz Garcia
+  Date: 03/25/2024
+  Filename: style.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, form, label, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Styles for this Project */
+html {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  color: rgb(101, 101, 101);
+}
+
+body {
+  background: rgb(220, 201, 230);
+  margin: 0px auto;
+}
+
+label {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+div {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+form#characterForm {
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 100px;
+  place-items: center;
+  display: grid;
+}
+
+form#characterForm fieldset {
+  border: none;
+  margin-left: -10px;
+}
+
+form#characterForm input[type="text"], select {
+  width: 50%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#generateHero {
+  width: 20%;
+  background-color: blueviolet;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#characterOutput {
+  width: 100%;
+  color: blueviolet;
+  font-size: 1.1em;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid blueviolet;
+  background-color: white;
+  padding: 15px;
+  display: none;
+}
