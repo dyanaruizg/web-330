@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      Pragmatic JavaScript
+      Chapter 2
+      Programming Assignment
+
+      Author: Diana Ruiz Garcia
+      Date: 04/16/2024
+      Filename: Home
+    -->
+    <title>Table Reservation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="restaurant.jpeg" alt="restaurant"></a>
+    </header>
+    <div class="form-container">
+      <form id="reservationForm">
+        <h1>Plant-Based Cuisine</h1>
+        <hr>
+        <h2>Make a reservation</h2>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="tableNumber">Table Number:</label><br />
+        <input type="number" id="tableNumber" name="tableNumber" required /><br />
+        <input type="submit" value="Reserve" />
+      </form>
+      <p id="message"></p>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
