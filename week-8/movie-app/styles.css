@@ -1,0 +1,87 @@
+/*
+  Pragmatic JavaScript
+  Chapter 4
+  Programming Assignment
+
+  Author: Diana Ruiz Garcia
+  Date: 05/08/2024
+  Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, input, button, form,
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Styles for this Project */
+body {
+  line-height: 1;
+  width: 920px;
+  background: rgb(242, 228, 251);
+  box-shadow: 3px 0px 15px gray, -3px 0px 15px gray;
+  margin: 0 auto;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+input[type=text], select {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 0.9em;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color: #8b4caf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  float: right;
+}
+
+button[type=submit]:hover {
+  background-color: #6f3c8f;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+#movie-title {
+  font-weight: bold;
+}
+
+#error-message {
+  font-size: 1em;
+  font-weight: bolder;
+}
